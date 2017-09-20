@@ -1,0 +1,62 @@
+@mixin fonts {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@mixin clearfix {
+  zoom: 1;
+  &::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+
+@mixin paddingbox ($p: 100% ){
+  &::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: $p;
+  }
+}
+
+@mixin texthidden ($line: 1 ){
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+
+@mixin position( $bottom: 0){
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: $bottom;
+  left: 0;
+  overflow: hidden;
+}
+
+@mixin centercover(){
+  position: relative;
+  overflow: hidden;
+  img{
+    width: auto;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 200%;
+    max-height: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0);
+  }
+}

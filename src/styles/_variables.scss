@@ -1,0 +1,33 @@
+// 基础字体大小
+$rem: 10;
+$fontSize: 16rem / $rem;
+$padding: 10rem / $rem;
+$bgColor: #f2f2f2;
+$color: #333;
+.mint-tab-item-label{
+  font-size: 1.5rem;
+}
+// swiper
+.mint-swipe-indicators{
+  .mint-swipe-indicator{
+    opacity: 0.5;
+    &.is-active{
+      opacity: 0.8;
+      border: 0;
+    }
+  }
+}
+$borderColor: #d4d3d3;
+// 主要的字体颜色
+$primaryColor: #fff;
+// 主要的背景颜色
+$primaryBgColor: #4d4d4d;
+// 默认不明显字体颜色
+$lightColor: #999999;
+// 默认强调颜色
+$warnColor: #d93636;
+// 底部导航的高度
+$homeBarCell: 52px;
+// app头部高度
+$appBarCell: 39px;
+// search的高
